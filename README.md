@@ -11,5 +11,4 @@ A simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**. Play ag
 ✅ Two-player mode  
 ✅ Interactive game board  
 ✅ Winning logic with real-time updates  
- 
 ✅ Option to restart the game  
