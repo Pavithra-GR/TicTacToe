@@ -53,3 +53,9 @@ main{
     display: block;
     margin: 20px auto;
 }
+
+p{
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 2cm;
+}
