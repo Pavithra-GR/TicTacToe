@@ -43,6 +43,7 @@ function updateTurnIndicator() {
     }
 }
 function checkWinner() {
+    let isDraw=true;
     winPatterns.forEach(pat=>{
         let [a,b,c]=pat;
         let boxA=boxes[a].innerText;
@@ -51,9 +52,19 @@ function checkWinner() {
         if(boxA && boxA ===boxB && boxA===boxC){
             alert(`${boxA} wins!`);
             boxes.forEach(box => box.removeEventListener("click", handleClick));
+            return;
         }
     
     })
+    boxes.forEach(box => {
+        if (box.innerText === "") {
+            isDraw = false; 
+        }
+    });
+
+    if (isDraw) {
+        alert("It's a Draw!");
+    }
     updateTurnIndicator();
 }
 
